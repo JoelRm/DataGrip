@@ -1,0 +1,41 @@
+	#########  Crear Snippeds ##############
+	View > Command Palette
+	     > Configure Snipped
+	     > New Global Snipped Files ...
+	#######################################
+
+	"Para crear componentes": {
+		"prefix": "fc",
+		"body": [
+		  "import styled from \"styled-components\";",
+		  "export function Componente() {",
+		  "  return (<Container>",
+		  "<h1>Componente</h1>",
+		  "  </Container>);",
+		  "}",
+		  "const Container =styled.div`",
+		  "  ",
+		  "`"
+		],
+		"description": "Para crear componentes"
+	  },
+
+
+
+	  "Para crear MyRoutes archivo": {
+		"prefix": "fr",
+		"body": [
+		  "import { BrowserRouter, Routes, Route } from \"react-router-dom\";",
+		  "import { Home } from \"../pages/Home\";",
+		  "export function MyRoutes() {",
+		  "  return (",
+		  "    <BrowserRouter>",
+		  "      <Routes>",
+		  "        <Route path=\"/\" element={<Home />} />",
+		  "      </Routes>",
+		  "    </BrowserRouter>",
+		  "  );",
+		  "}"
+		],
+		"description": "Para crear MyRoutes archivo"
+	  },
